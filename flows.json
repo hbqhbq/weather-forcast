@@ -1,0 +1,3547 @@
+[
+    {
+        "id": "fdf189d577bd20bb",
+        "type": "tab",
+        "label": "流程 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "37f0ccf6.6b71cc",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "29a351e904214fe0",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "d7b987f2a63856bc",
+        "type": "tab",
+        "label": "流程 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7ddb799eea90606a",
+        "type": "tab",
+        "label": "Basic Weather",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "ecc26120.5c01a8",
+        "type": "mongodb3",
+        "uri": "mongodb://localhost:27017",
+        "name": "HKO",
+        "options": "",
+        "parallelism": "-1"
+    },
+    {
+        "id": "e9f24978.c8dae8",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "HKSTP",
+                "default": "#4B7930",
+                "baseColor": "#371a95",
+                "baseFont": "Arial,Arial,Helvetica,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "6f24792a.43aac",
+        "type": "ui_tab",
+        "name": "Weather",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4921adae.55bbbc",
+        "type": "ui_group",
+        "name": "Weather Report",
+        "tab": "6f24792a.43aac",
+        "order": 2,
+        "disp": true,
+        "width": "12",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "1de74c93c39920d8",
+        "type": "ui_tab",
+        "name": "Traffic",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": true,
+        "hidden": false
+    },
+    {
+        "id": "79153715ea99f33b",
+        "type": "ui_group",
+        "name": "welcome bar",
+        "tab": "1de74c93c39920d8",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "126a25d637e520b3",
+        "type": "mongodb3",
+        "uri": "mongodb://localhost:27017",
+        "name": "20221117demo",
+        "options": "",
+        "parallelism": "-1"
+    },
+    {
+        "id": "9281c6494b159ed1",
+        "type": "mongodb3",
+        "uri": "mongodb://localhost:27017",
+        "name": "HKO_Weather",
+        "options": "",
+        "parallelism": "-1"
+    },
+    {
+        "id": "35a0d066376ebaaf",
+        "type": "ui_tab",
+        "name": "Weather Forecast",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "73bd786f455878dd",
+        "type": "ui_group",
+        "name": "Weather Forecast",
+        "tab": "6f24792a.43aac",
+        "order": 4,
+        "disp": true,
+        "width": "12",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "623c01308804a0a9",
+        "type": "mongodb3",
+        "uri": "mongodb://localhost:27017",
+        "name": "HKO_Air",
+        "options": "",
+        "parallelism": "-1"
+    },
+    {
+        "id": "ea6a3a625326cede",
+        "type": "ui_group",
+        "name": " Air Quality",
+        "tab": "6f24792a.43aac",
+        "order": 3,
+        "disp": true,
+        "width": "12",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "e71fe7bc6b278e34",
+        "type": "ui_group",
+        "name": "Current information",
+        "tab": "6f24792a.43aac",
+        "order": 1,
+        "disp": true,
+        "width": "24",
+        "collapse": true,
+        "className": ""
+    },
+    {
+        "id": "8ddc07870d07aa9d",
+        "type": "ui_tab",
+        "name": "Current Information",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "ffef942f62a0da57",
+        "type": "inject",
+        "z": "fdf189d577bd20bb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "date",
+                "v": "20221117",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Hello",
+        "payloadType": "str",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "9cb407838336d19e",
+                "f4a57a77b2d533ab"
+            ]
+        ]
+    },
+    {
+        "id": "9cb407838336d19e",
+        "type": "function",
+        "z": "fdf189d577bd20bb",
+        "name": "function 1",
+        "func": "\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 120,
+        "wires": [
+            [
+                "d8ce1a56c5fa09e1"
+            ]
+        ]
+    },
+    {
+        "id": "d8ce1a56c5fa09e1",
+        "type": "debug",
+        "z": "fdf189d577bd20bb",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "date",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "f4a57a77b2d533ab",
+        "type": "ui_text",
+        "z": "fdf189d577bd20bb",
+        "group": "79153715ea99f33b",
+        "order": 1,
+        "width": 10,
+        "height": 1,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 290,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c5a02f678682ea9e",
+        "type": "inject",
+        "z": "fdf189d577bd20bb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 280,
+        "wires": [
+            [
+                "b5bfce85242916fc"
+            ]
+        ]
+    },
+    {
+        "id": "b5bfce85242916fc",
+        "type": "http request",
+        "z": "fdf189d577bd20bb",
+        "name": "get eta",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://rt.data.gov.hk/v1/transport/citybus-nwfb/eta/nwfb/001113/970",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 270,
+        "y": 280,
+        "wires": [
+            [
+                "3c1c30b518393e76",
+                "940c631711ce0f4d"
+            ]
+        ]
+    },
+    {
+        "id": "3c1c30b518393e76",
+        "type": "function",
+        "z": "fdf189d577bd20bb",
+        "name": "function 2",
+        "func": "const eta = new Date(msg.payload.data[0].eta)\nconst now = new Date();\n\nmsg.payload = Math.round((eta.getTime() - now.getTime()) / 1000);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 280,
+        "wires": [
+            [
+                "f7e052e142fd8512"
+            ]
+        ]
+    },
+    {
+        "id": "f7e052e142fd8512",
+        "type": "ui_text",
+        "z": "fdf189d577bd20bb",
+        "group": "79153715ea99f33b",
+        "order": 1,
+        "width": 10,
+        "height": 1,
+        "name": "show eta",
+        "label": "next arrival",
+        "format": "{{msg.payload}} s",
+        "layout": "row-spread",
+        "className": "",
+        "x": 620,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "0549d9e59ed29b24",
+        "type": "mongodb3 in",
+        "z": "fdf189d577bd20bb",
+        "service": "_ext_",
+        "configNode": "126a25d637e520b3",
+        "name": "Insert ETA",
+        "collection": "BusETA",
+        "operation": "insertOne",
+        "x": 580,
+        "y": 360,
+        "wires": [
+            [
+                "6d79eaec2ba23ff7"
+            ]
+        ]
+    },
+    {
+        "id": "940c631711ce0f4d",
+        "type": "function",
+        "z": "fdf189d577bd20bb",
+        "name": "prepare insert data",
+        "func": "const eta = new Date(msg.payload.data[0].eta)\nconst dataTime = new Date(msg.payload.data[0].data_timestamp);\n\nmsg.payload = {\n    eta: eta,\n    dataTime: dataTime\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 170,
+        "y": 360,
+        "wires": [
+            [
+                "7080a92a19601f07"
+            ]
+        ]
+    },
+    {
+        "id": "7080a92a19601f07",
+        "type": "function",
+        "z": "fdf189d577bd20bb",
+        "name": "check update",
+        "func": "const last = flow.get('last') || new Date(0);\nif (msg.payload.dataTime > last){\n    flow.set('last', msg.payload.dataTime);\n    return msg;\n}\n\nreturn null;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 360,
+        "wires": [
+            [
+                "0549d9e59ed29b24"
+            ]
+        ]
+    },
+    {
+        "id": "6d79eaec2ba23ff7",
+        "type": "debug",
+        "z": "fdf189d577bd20bb",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 760,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "21302d8c4b17c8b9",
+        "type": "function",
+        "z": "fdf189d577bd20bb",
+        "name": "construct query",
+        "func": "const d = new Date();\nd.setHours(d.getHours() - 1);\nmsg.payload = {\n    dataTime: { $gt: d.toISOString() }\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dae9644d86f47e82",
+        "type": "mongodb3 in",
+        "z": "fdf189d577bd20bb",
+        "service": "_ext_",
+        "configNode": "126a25d637e520b3",
+        "name": "retrieve ETA",
+        "collection": "BusETA",
+        "operation": "find.toArray",
+        "x": 510,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4734019225397b1d",
+        "type": "function",
+        "z": "fdf189d577bd20bb",
+        "name": "preprocess data",
+        "func": "const eta = new Date(msg.payload.data[0].eta)\nconst now = new Date();\n\nmsg.payload = Math.round((eta.getTime() - now.getTime()) / 1000);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d629c8e.14838b8",
+        "type": "mongodb3 in",
+        "z": "37f0ccf6.6b71cc",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "",
+        "collection": "Weather Report",
+        "operation": "insert",
+        "x": 509,
+        "y": 269,
+        "wires": [
+            [
+                "9dc0f977.50d88"
+            ]
+        ]
+    },
+    {
+        "id": "19d727d7.21581",
+        "type": "mongodb3 in",
+        "z": "37f0ccf6.6b71cc",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "HKO Retrieve Last Record",
+        "collection": "Weather Report",
+        "operation": "findOne",
+        "x": 452,
+        "y": 54,
+        "wires": [
+            [
+                "6d5ebae.c730a44"
+            ]
+        ]
+    },
+    {
+        "id": "a8def012.10bd28",
+        "type": "inject",
+        "z": "37f0ccf6.6b71cc",
+        "name": "",
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 166,
+        "y": 54,
+        "wires": [
+            [
+                "4b3d2bc4.9c2efc"
+            ]
+        ]
+    },
+    {
+        "id": "4b3d2bc4.9c2efc",
+        "type": "function",
+        "z": "37f0ccf6.6b71cc",
+        "name": "Retrieve Last Record Query",
+        "func": "msg.payload = [\n    {\n        \"$query\": {}\n    },\n    {\n        \"sort\": {\n            \"_id\": -1\n        }\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 310,
+        "y": 121,
+        "wires": [
+            [
+                "19d727d7.21581"
+            ]
+        ]
+    },
+    {
+        "id": "6d5ebae.c730a44",
+        "type": "function",
+        "z": "37f0ccf6.6b71cc",
+        "name": "Get Last updateTime",
+        "func": "if(msg.payload.hasOwnProperty('updateTime')) {\n    flow.set('lastUpdateTime', msg.payload.updateTime);\n} else {\n    flow.set('lastUpdateTime', \"\");\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 608,
+        "y": 121,
+        "wires": [
+            [
+                "6f781e37.85c0d"
+            ]
+        ]
+    },
+    {
+        "id": "6f781e37.85c0d",
+        "type": "http request",
+        "z": "37f0ccf6.6b71cc",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=en",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 261,
+        "y": 177,
+        "wires": [
+            [
+                "5f5d97d3.b9eda8"
+            ]
+        ]
+    },
+    {
+        "id": "5f5d97d3.b9eda8",
+        "type": "json",
+        "z": "37f0ccf6.6b71cc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 410,
+        "y": 177,
+        "wires": [
+            [
+                "4a99264f.206348"
+            ]
+        ]
+    },
+    {
+        "id": "4a99264f.206348",
+        "type": "function",
+        "z": "37f0ccf6.6b71cc",
+        "name": "New Record Available",
+        "func": "var lastUpdateTime = flow.get('lastUpdateTime');\n\nvar updateTimeTemp = new Date(msg.payload.updateTime)\nvar updateTime = updateTimeTemp.toISOString() ;\n\nif(updateTime > lastUpdateTime) {\n    msg.needUpdate = true ;\n    msg.payload.updateTime = updateTime ;\n} else {\n    msg.needUpdate = false ;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 605,
+        "y": 177,
+        "wires": [
+            [
+                "a5266dd0.531b08"
+            ]
+        ]
+    },
+    {
+        "id": "a5266dd0.531b08",
+        "type": "switch",
+        "z": "37f0ccf6.6b71cc",
+        "name": "Need Update",
+        "property": "needUpdate",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 234,
+        "wires": [
+            [
+                "3762950.5f9e8ec"
+            ],
+            [
+                "d629c8e.14838b8"
+            ]
+        ]
+    },
+    {
+        "id": "3762950.5f9e8ec",
+        "type": "function",
+        "z": "37f0ccf6.6b71cc",
+        "name": "No Update",
+        "func": "msg.payload = \"No Update\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 461,
+        "y": 227,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9dc0f977.50d88",
+        "type": "debug",
+        "z": "37f0ccf6.6b71cc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 733,
+        "y": 269,
+        "wires": []
+    },
+    {
+        "id": "14f76650.95f762",
+        "type": "mongodb3 in",
+        "z": "37f0ccf6.6b71cc",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "HKO Retrieve Records",
+        "collection": "Weather Report",
+        "operation": "find.toArray",
+        "x": 545,
+        "y": 415,
+        "wires": [
+            [
+                "b2fa4aaa.6b9388"
+            ]
+        ]
+    },
+    {
+        "id": "e0be51b7.389718",
+        "type": "function",
+        "z": "37f0ccf6.6b71cc",
+        "name": "Construct Date Range",
+        "func": "var date = new Date();\nvar day = date.getDate() ;\nvar month = date.getMonth();\nvar year = date.getFullYear();\nvar hour = date.getHours();\nvar minutes = date.getMinutes();\nvar seconds = date.getSeconds();\nvar st, et ;\nvar minMilliSeconds = 60 * 1000;\nvar hourMilliSeconds = 60 * minMilliSeconds;\nvar dayMilliSeconds = 24 * hourMilliSeconds;\nvar duration = 1 * dayMilliSeconds;\n\net = date ;\net.setSeconds(seconds/10*10);\nst = new Date() ;\nst.setTime(et.getTime() - duration);\n\nmsg.startTime = st ;\nmsg.endTime = et ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 261,
+        "y": 417,
+        "wires": [
+            [
+                "b3f8996c.583ea"
+            ]
+        ]
+    },
+    {
+        "id": "b3f8996c.583ea",
+        "type": "function",
+        "z": "37f0ccf6.6b71cc",
+        "name": "Construct Queries",
+        "func": "var st = msg.startTime;\nvar et = msg.endTime;\n\nvar stts = st.getTime();\nvar etts = et.getTime();\n\nvar ststr=st.toISOString();\nvar etstr=et.toISOString();\n\nvar query = { 'updateTime': { $gt: ststr, $lt: etstr} };\n\nmsg.payload = query;\nmsg.ststr = ststr ;\nmsg.etstr = etstr ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 384,
+        "y": 353,
+        "wires": [
+            [
+                "14f76650.95f762"
+            ]
+        ]
+    },
+    {
+        "id": "b2fa4aaa.6b9388",
+        "type": "function",
+        "z": "37f0ccf6.6b71cc",
+        "name": "Format Chart Data",
+        "func": "var weatherDataArray = Object.values(msg.payload) ;\n\nvar dataCount = weatherDataArray.length ;\n\nvar i, j ;\n\nvar placeDataArray = {} ;\n\n\nfor(j = 0; j < dataCount; j++) {\n    for(i = 0; i < weatherDataArray[j].temperature.data.length; i++) {\n        if(!placeDataArray.hasOwnProperty(weatherDataArray[j].temperature.data[i].place)) {\n            placeDataArray[weatherDataArray[j].temperature.data[i].place] = [] ;\n        }\n        placeDataArray[weatherDataArray[j].temperature.data[i].place].push({\"x\": new Date(weatherDataArray[j].temperature.recordTime), \"y\": weatherDataArray[j].temperature.data[i].value});\n    }\n}\n\nvar chartData = [{\"series\": Object.keys(placeDataArray), \"data\": Object.values(placeDataArray), \"labels\": \"\"}];\n\nmsg.payload = chartData ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 258.5,
+        "y": 482,
+        "wires": [
+            [
+                "2c261de.13f9f62"
+            ]
+        ]
+    },
+    {
+        "id": "2c261de.13f9f62",
+        "type": "ui_chart",
+        "z": "37f0ccf6.6b71cc",
+        "name": "",
+        "group": "4921adae.55bbbc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "24",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 534,
+        "y": 483,
+        "wires": [
+            [
+                "6277e851.3741e"
+            ]
+        ]
+    },
+    {
+        "id": "b3c26fd7.7c096",
+        "type": "inject",
+        "z": "37f0ccf6.6b71cc",
+        "name": "",
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 360,
+        "wires": [
+            [
+                "e0be51b7.389718"
+            ]
+        ]
+    },
+    {
+        "id": "6277e851.3741e",
+        "type": "debug",
+        "z": "37f0ccf6.6b71cc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 584,
+        "y": 539,
+        "wires": []
+    },
+    {
+        "id": "d923f096aa4090cb",
+        "type": "mongodb3 in",
+        "z": "29a351e904214fe0",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "",
+        "collection": "Weather Report",
+        "operation": "insert",
+        "x": 509,
+        "y": 269,
+        "wires": [
+            [
+                "293424dbcd3dd74f"
+            ]
+        ]
+    },
+    {
+        "id": "51cdd0f3e53831c6",
+        "type": "mongodb3 in",
+        "z": "29a351e904214fe0",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "HKO Retrieve Last Record",
+        "collection": "Weather Report",
+        "operation": "findOne",
+        "x": 452,
+        "y": 54,
+        "wires": [
+            [
+                "fdb13f82584b3c9a"
+            ]
+        ]
+    },
+    {
+        "id": "0f0572485e7b65b9",
+        "type": "inject",
+        "z": "29a351e904214fe0",
+        "name": "",
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 166,
+        "y": 54,
+        "wires": [
+            [
+                "0ce335c233c334fc"
+            ]
+        ]
+    },
+    {
+        "id": "0ce335c233c334fc",
+        "type": "function",
+        "z": "29a351e904214fe0",
+        "name": "Retrieve Last Record Query",
+        "func": "msg.payload = [\n    {\n        \"$query\": {}\n    },\n    {\n        \"sort\": {\n            \"_id\": -1\n        }\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 121,
+        "wires": [
+            [
+                "51cdd0f3e53831c6"
+            ]
+        ]
+    },
+    {
+        "id": "fdb13f82584b3c9a",
+        "type": "function",
+        "z": "29a351e904214fe0",
+        "name": "Get Last updateTime",
+        "func": "if(msg.payload.hasOwnProperty('updateTime')) {\n    flow.set('lastUpdateTime', msg.payload.updateTime);\n} else {\n    flow.set('lastUpdateTime', \"\");\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 608,
+        "y": 121,
+        "wires": [
+            [
+                "55e7b34d327bd7bd"
+            ]
+        ]
+    },
+    {
+        "id": "55e7b34d327bd7bd",
+        "type": "http request",
+        "z": "29a351e904214fe0",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=en",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 261,
+        "y": 177,
+        "wires": [
+            [
+                "35f9b3a351ae7ca3"
+            ]
+        ]
+    },
+    {
+        "id": "35f9b3a351ae7ca3",
+        "type": "json",
+        "z": "29a351e904214fe0",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 410,
+        "y": 177,
+        "wires": [
+            [
+                "f5705e0ee1d7ebe0"
+            ]
+        ]
+    },
+    {
+        "id": "f5705e0ee1d7ebe0",
+        "type": "function",
+        "z": "29a351e904214fe0",
+        "name": "New Record Available",
+        "func": "var lastUpdateTime = flow.get('lastUpdateTime');\n\nvar updateTimeTemp = new Date(msg.payload.updateTime)\nvar updateTime = updateTimeTemp.toISOString() ;\n\nif(updateTime > lastUpdateTime) {\n    msg.needUpdate = true ;\n    msg.payload.updateTime = updateTime ;\n} else {\n    msg.needUpdate = false ;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 605,
+        "y": 177,
+        "wires": [
+            [
+                "6f6188840e3f75f2"
+            ]
+        ]
+    },
+    {
+        "id": "6f6188840e3f75f2",
+        "type": "switch",
+        "z": "29a351e904214fe0",
+        "name": "Need Update",
+        "property": "needUpdate",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 270,
+        "y": 234,
+        "wires": [
+            [
+                "497fd3b4b69a73cf"
+            ],
+            [
+                "d923f096aa4090cb"
+            ]
+        ]
+    },
+    {
+        "id": "497fd3b4b69a73cf",
+        "type": "function",
+        "z": "29a351e904214fe0",
+        "name": "No Update",
+        "func": "msg.payload = \"No Update\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 461,
+        "y": 227,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "293424dbcd3dd74f",
+        "type": "debug",
+        "z": "29a351e904214fe0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 733,
+        "y": 269,
+        "wires": []
+    },
+    {
+        "id": "a47244815d7eef56",
+        "type": "mongodb3 in",
+        "z": "29a351e904214fe0",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "HKO Retrieve Records",
+        "collection": "Weather Report",
+        "operation": "find.toArray",
+        "x": 545,
+        "y": 415,
+        "wires": [
+            [
+                "61a42cabf4a31bf9"
+            ]
+        ]
+    },
+    {
+        "id": "b120dc21f9fadd4f",
+        "type": "function",
+        "z": "29a351e904214fe0",
+        "name": "Construct Date Range",
+        "func": "var date = new Date();\nvar day = date.getDate() ;\nvar month = date.getMonth();\nvar year = date.getFullYear();\nvar hour = date.getHours();\nvar minutes = date.getMinutes();\nvar seconds = date.getSeconds();\nvar st, et ;\nvar minMilliSeconds = 60 * 1000;\nvar hourMilliSeconds = 60 * minMilliSeconds;\nvar dayMilliSeconds = 24 * hourMilliSeconds;\nvar duration = 1 * dayMilliSeconds;\n\net = date ;\net.setSeconds(seconds/10*10);\nst = new Date() ;\nst.setTime(et.getTime() - duration);\n\nmsg.startTime = st ;\nmsg.endTime = et ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 420,
+        "wires": [
+            [
+                "e4a36cc5cec95bd7"
+            ]
+        ]
+    },
+    {
+        "id": "e4a36cc5cec95bd7",
+        "type": "function",
+        "z": "29a351e904214fe0",
+        "name": "Construct Queries",
+        "func": "var st = msg.startTime;\nvar et = msg.endTime;\n\nvar stts = st.getTime();\nvar etts = et.getTime();\n\nvar ststr=st.toISOString();\nvar etstr=et.toISOString();\n\nvar query = { 'updateTime': { $gt: ststr, $lt: etstr} };\n\nmsg.payload = query;\nmsg.ststr = ststr ;\nmsg.etstr = etstr ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "a47244815d7eef56"
+            ]
+        ]
+    },
+    {
+        "id": "61a42cabf4a31bf9",
+        "type": "function",
+        "z": "29a351e904214fe0",
+        "name": "Format Chart Data",
+        "func": "var weatherDataArray = Object.values(msg.payload) ;\n\nvar dataCount = weatherDataArray.length ;\n\nvar i, j ;\n\nvar placeDataArray = {} ;\n\n\nfor(j = 0; j < dataCount; j++) {\n    for(i = 0; i < weatherDataArray[j].temperature.data.length; i++) {\n        if(!placeDataArray.hasOwnProperty(weatherDataArray[j].temperature.data[i].place)) {\n            placeDataArray[weatherDataArray[j].temperature.data[i].place] = [] ;\n        }\n        placeDataArray[weatherDataArray[j].temperature.data[i].place].push({\"x\": new Date(weatherDataArray[j].temperature.recordTime), \"y\": weatherDataArray[j].temperature.data[i].value});\n    }\n}\n\nvar chartData = [{\"series\": Object.keys(placeDataArray), \"data\": Object.values(placeDataArray), \"labels\": \"\"}];\n\nmsg.payload = chartData ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 258.5,
+        "y": 482,
+        "wires": [
+            [
+                "8263360cbf4e5c1c"
+            ]
+        ]
+    },
+    {
+        "id": "8263360cbf4e5c1c",
+        "type": "ui_chart",
+        "z": "29a351e904214fe0",
+        "name": "",
+        "group": "4921adae.55bbbc",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "24",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 510,
+        "y": 480,
+        "wires": [
+            [
+                "d6db290c3d1ec418"
+            ]
+        ]
+    },
+    {
+        "id": "eba4a97fedeb8031",
+        "type": "inject",
+        "z": "29a351e904214fe0",
+        "name": "",
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 356,
+        "wires": [
+            [
+                "b120dc21f9fadd4f"
+            ]
+        ]
+    },
+    {
+        "id": "d6db290c3d1ec418",
+        "type": "debug",
+        "z": "29a351e904214fe0",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 710,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4df7b30b87e9226a",
+        "type": "mongodb3 in",
+        "z": "d7b987f2a63856bc",
+        "service": "_ext_",
+        "configNode": "9281c6494b159ed1",
+        "name": "",
+        "collection": "Weather Forecast",
+        "operation": "insert",
+        "x": 590,
+        "y": 860,
+        "wires": [
+            [
+                "725281554ff59056"
+            ]
+        ]
+    },
+    {
+        "id": "0bee4c16712e0946",
+        "type": "mongodb3 in",
+        "z": "d7b987f2a63856bc",
+        "service": "_ext_",
+        "configNode": "9281c6494b159ed1",
+        "name": "HKO_Weather Retrieve Last Record",
+        "collection": "Weather Forecast",
+        "operation": "findOne",
+        "x": 533,
+        "y": 645,
+        "wires": [
+            [
+                "31b8e06ec1a5d796"
+            ]
+        ]
+    },
+    {
+        "id": "0bb15b1d4cb0678e",
+        "type": "inject",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 640,
+        "wires": [
+            [
+                "7542b448cc722c77"
+            ]
+        ]
+    },
+    {
+        "id": "7542b448cc722c77",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Retrieve Last Record Query",
+        "func": "msg.payload = [\n    {\n        \"$query\": {}\n    },\n    {\n        \"sort\": {\n            \"_id\": -1\n        }\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 361,
+        "y": 712,
+        "wires": [
+            [
+                "0bee4c16712e0946"
+            ]
+        ]
+    },
+    {
+        "id": "31b8e06ec1a5d796",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Get Last updateTime",
+        "func": "if(msg.payload.hasOwnProperty('updateTime')) {\n    flow.set('lastUpdateTime', msg.payload.updateTime);\n} else {\n    flow.set('lastUpdateTime', \"\");\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 659,
+        "y": 712,
+        "wires": [
+            [
+                "7810c029839e3a37"
+            ]
+        ]
+    },
+    {
+        "id": "7810c029839e3a37",
+        "type": "http request",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=fnd&lang=en",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 312,
+        "y": 768,
+        "wires": [
+            [
+                "344e14e319f4a4f8"
+            ]
+        ]
+    },
+    {
+        "id": "344e14e319f4a4f8",
+        "type": "json",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 461,
+        "y": 768,
+        "wires": [
+            [
+                "926215297f9a4fd0"
+            ]
+        ]
+    },
+    {
+        "id": "926215297f9a4fd0",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "New Record Available",
+        "func": "var lastUpdateTime = flow.get('lastUpdateTime');\n\nvar updateTimeTemp = new Date(msg.payload.updateTime)\nvar updateTime = updateTimeTemp.toISOString() ;\n\nif(updateTime > lastUpdateTime) {\n    msg.needUpdate = true ;\n    msg.payload.updateTime = updateTime ;\n} else {\n    msg.needUpdate = false ;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 656,
+        "y": 768,
+        "wires": [
+            [
+                "ae6b296a77235459"
+            ]
+        ]
+    },
+    {
+        "id": "ae6b296a77235459",
+        "type": "switch",
+        "z": "d7b987f2a63856bc",
+        "name": "Need Update",
+        "property": "needUpdate",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 820,
+        "wires": [
+            [
+                "1d0961af34a3020f"
+            ],
+            [
+                "4df7b30b87e9226a"
+            ]
+        ]
+    },
+    {
+        "id": "1d0961af34a3020f",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "No Update",
+        "func": "msg.payload = \"No Update\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 512,
+        "y": 818,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "725281554ff59056",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "db2f3b189ff0a7d3",
+        "type": "mongodb3 in",
+        "z": "d7b987f2a63856bc",
+        "service": "_ext_",
+        "configNode": "9281c6494b159ed1",
+        "name": "HKO_Weather Retrieve Records",
+        "collection": "Weather Forecast",
+        "operation": "find.toArray",
+        "x": 626,
+        "y": 1006,
+        "wires": [
+            [
+                "09f8c08f087bea3c",
+                "a3a3e36d6b3e3eae"
+            ]
+        ]
+    },
+    {
+        "id": "52b1ddd112abfee6",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Construct Date Range",
+        "func": "var date = new Date();\nvar day = date.getDate() ;\nvar month = date.getMonth();\nvar year = date.getFullYear();\nvar hour = date.getHours();\nvar minutes = date.getMinutes();\nvar seconds = date.getSeconds();\nvar st, et ;\nvar minMilliSeconds = 60 * 1000;\nvar hourMilliSeconds = 60 * minMilliSeconds;\nvar dayMilliSeconds = 24 * hourMilliSeconds;\nvar duration = 1 * dayMilliSeconds;\n\net = date ;\net.setSeconds(seconds/10*10);\nst = new Date() ;\nst.setTime(et.getTime() - duration);\n\nmsg.startTime = st ;\nmsg.endTime = et ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 311,
+        "y": 1011,
+        "wires": [
+            [
+                "4e7e0ee7f98f4975"
+            ]
+        ]
+    },
+    {
+        "id": "4e7e0ee7f98f4975",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Construct Queries",
+        "func": "var st = msg.startTime;\nvar et = msg.endTime;\n\nvar stts = st.getTime();\nvar etts = et.getTime();\n\nvar ststr=st.toISOString();\nvar etstr=et.toISOString();\n\nvar query = { 'updateTime': { $gt: ststr, $lt: etstr} };\n\nmsg.payload = query;\nmsg.ststr = ststr ;\nmsg.etstr = etstr ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 461,
+        "y": 951,
+        "wires": [
+            [
+                "db2f3b189ff0a7d3"
+            ]
+        ]
+    },
+    {
+        "id": "09f8c08f087bea3c",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Format Chart Data",
+        "func": "var weatherDataArray = Object.values(msg.payload) ;\nvar dataCount = weatherDataArray.length ;\nvar i, j ;\nvar placeDataArray = {};\nplaceDataArray[\"forecastMaxtemp\"] = [];\nplaceDataArray[\"forecastMintemp\"] = [];\n\nfor (j = 0; j < dataCount; j++) {\n    for (i = 0; i < weatherDataArray[j].weatherForecast.length; i++) {\n        placeDataArray[\"forecastMaxtemp\"].push(\n            { \n                \"x\": weatherDataArray[j].weatherForecast[i].forecastDate, \n                \"y\": weatherDataArray[j].weatherForecast[i].forecastMaxtemp.value\n            }\n        );\n        placeDataArray[\"forecastMintemp\"].push(\n            {\n                \"x\": weatherDataArray[j].weatherForecast[i].forecastDate,\n                \"y\": weatherDataArray[j].weatherForecast[i].forecastMintemp.value\n            }\n        );\n    }\n}\n\nvar chartData = [{\"series\": Object.keys(placeDataArray), \"data\": Object.values(placeDataArray), \"labels\": \"\"}];\nmsg.payload = chartData ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 960,
+        "wires": [
+            [
+                "9651e16523948320"
+            ]
+        ]
+    },
+    {
+        "id": "9651e16523948320",
+        "type": "ui_chart",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "group": "73bd786f455878dd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature Forecast",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "Y-M-D",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "9",
+        "removeOlderPoints": "9",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1100,
+        "y": 960,
+        "wires": [
+            [
+                "6e48812a2723cb8c"
+            ]
+        ]
+    },
+    {
+        "id": "73cd345f2da62b6f",
+        "type": "inject",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 201,
+        "y": 947,
+        "wires": [
+            [
+                "52b1ddd112abfee6"
+            ]
+        ]
+    },
+    {
+        "id": "6e48812a2723cb8c",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload + test",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "06b05e8b0325409a",
+        "type": "mongodb3 in",
+        "z": "d7b987f2a63856bc",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "",
+        "collection": "Weather Report",
+        "operation": "insert",
+        "x": 540,
+        "y": 300,
+        "wires": [
+            [
+                "2ea06f066d7ea146"
+            ]
+        ]
+    },
+    {
+        "id": "288afbe2a2fd8220",
+        "type": "mongodb3 in",
+        "z": "d7b987f2a63856bc",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "HKO Retrieve Last Record",
+        "collection": "Weather Report",
+        "operation": "findOne",
+        "x": 483,
+        "y": 85,
+        "wires": [
+            [
+                "0824185b67077e43"
+            ]
+        ]
+    },
+    {
+        "id": "548322af46ebeb93",
+        "type": "inject",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 197,
+        "y": 85,
+        "wires": [
+            [
+                "89f1b42c117909af"
+            ]
+        ]
+    },
+    {
+        "id": "89f1b42c117909af",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Retrieve Last Record Query",
+        "func": "msg.payload = [\n    {\n        \"$query\": {}\n    },\n    {\n        \"sort\": {\n            \"_id\": -1\n        }\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 341,
+        "y": 152,
+        "wires": [
+            [
+                "288afbe2a2fd8220"
+            ]
+        ]
+    },
+    {
+        "id": "0824185b67077e43",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Get Last updateTime",
+        "func": "if(msg.payload.hasOwnProperty('updateTime')) {\n    flow.set('lastUpdateTime', msg.payload.updateTime);\n} else {\n    flow.set('lastUpdateTime', \"\");\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 639,
+        "y": 152,
+        "wires": [
+            [
+                "146ffa4d60fffee3"
+            ]
+        ]
+    },
+    {
+        "id": "146ffa4d60fffee3",
+        "type": "http request",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=en",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 292,
+        "y": 208,
+        "wires": [
+            [
+                "fcfd3555588cd40d"
+            ]
+        ]
+    },
+    {
+        "id": "fcfd3555588cd40d",
+        "type": "json",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 441,
+        "y": 208,
+        "wires": [
+            [
+                "c1c22b90d2d4beae"
+            ]
+        ]
+    },
+    {
+        "id": "c1c22b90d2d4beae",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "New Record Available",
+        "func": "var lastUpdateTime = flow.get('lastUpdateTime');\n\nvar updateTimeTemp = new Date(msg.payload.updateTime)\nvar updateTime = updateTimeTemp.toISOString() ;\n\nif(updateTime > lastUpdateTime) {\n    msg.needUpdate = true ;\n    msg.payload.updateTime = updateTime ;\n} else {\n    msg.needUpdate = false ;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 636,
+        "y": 208,
+        "wires": [
+            [
+                "3dc6ec1f6a888f43"
+            ]
+        ]
+    },
+    {
+        "id": "3dc6ec1f6a888f43",
+        "type": "switch",
+        "z": "d7b987f2a63856bc",
+        "name": "Need Update",
+        "property": "needUpdate",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 301,
+        "y": 265,
+        "wires": [
+            [
+                "751fa992d915d58e"
+            ],
+            [
+                "06b05e8b0325409a"
+            ]
+        ]
+    },
+    {
+        "id": "751fa992d915d58e",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "No Update",
+        "func": "msg.payload = \"No Update\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 492,
+        "y": 258,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2ea06f066d7ea146",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 764,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1af682eb8ad40c5a",
+        "type": "mongodb3 in",
+        "z": "d7b987f2a63856bc",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "HKO Retrieve Records",
+        "collection": "Weather Report",
+        "operation": "find.toArray",
+        "x": 540,
+        "y": 420,
+        "wires": [
+            [
+                "db7e231811dd732e",
+                "ff65992ff05c37dc",
+                "47dbccd8cabc7626",
+                "2c5aa3d902572690"
+            ]
+        ]
+    },
+    {
+        "id": "7019f91aaadb6e19",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Construct Date Range",
+        "func": "var date = new Date();\nvar day = date.getDate() ;\nvar month = date.getMonth();\nvar year = date.getFullYear();\nvar hour = date.getHours();\nvar minutes = date.getMinutes();\nvar seconds = date.getSeconds();\nvar st, et ;\nvar minMilliSeconds = 60 * 1000;\nvar hourMilliSeconds = 60 * minMilliSeconds;\nvar dayMilliSeconds = 24 * hourMilliSeconds;\nvar duration = 1 * dayMilliSeconds;\n\net = date ;\net.setSeconds(seconds/10*10);\nst = new Date() ;\nst.setTime(et.getTime() - duration);\n\nmsg.startTime = st ;\nmsg.endTime = et ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 420,
+        "wires": [
+            [
+                "fa16f958772db034"
+            ]
+        ]
+    },
+    {
+        "id": "fa16f958772db034",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Construct Queries",
+        "func": "var st = msg.startTime;\nvar et = msg.endTime;\n\nvar stts = st.getTime();\nvar etts = et.getTime();\n\nvar ststr=st.toISOString();\nvar etstr=et.toISOString();\n\nvar query = { 'updateTime': { $gt: ststr, $lt: etstr} };\n\nmsg.payload = query;\nmsg.ststr = ststr ;\nmsg.etstr = etstr ;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "1af682eb8ad40c5a"
+            ]
+        ]
+    },
+    {
+        "id": "db7e231811dd732e",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Format Chart Data",
+        "func": "var weatherDataArray = Object.values(msg.payload) ;\n\nvar dataCount = weatherDataArray.length ;\n\nvar i, j ;\n\nvar placeDataArray = {} ;\n\n\nfor(j = 0; j < dataCount; j++) {\n    for(i = 0; i < weatherDataArray[j].temperature.data.length; i++) {\n        if(!placeDataArray.hasOwnProperty(weatherDataArray[j].temperature.data[i].place)) {\n            placeDataArray[weatherDataArray[j].temperature.data[i].place] = [] ;\n        }\n        placeDataArray[weatherDataArray[j].temperature.data[i].place].push({\"x\": new Date(weatherDataArray[j].temperature.recordTime), \"y\": weatherDataArray[j].temperature.data[i].value});\n    }\n}\n\nvar chartData = [{\"series\": Object.keys(placeDataArray), \"data\": Object.values(placeDataArray), \"labels\": \"\"}];\n\nmsg.payload = chartData ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 440,
+        "wires": [
+            [
+                "55929356fdcfa919"
+            ]
+        ]
+    },
+    {
+        "id": "55929356fdcfa919",
+        "type": "ui_chart",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "group": "4921adae.55bbbc",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "24",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 950,
+        "y": 440,
+        "wires": [
+            [
+                "dd631dc729038371"
+            ]
+        ]
+    },
+    {
+        "id": "a3d9a7ba4c2c1b27",
+        "type": "inject",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 380,
+        "wires": [
+            [
+                "7019f91aaadb6e19"
+            ]
+        ]
+    },
+    {
+        "id": "dd631dc729038371",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "b54cb16b77028af4",
+        "type": "ui_chart",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "group": "4921adae.55bbbc",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "label": "Rainfall Report",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "24",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 380,
+        "wires": [
+            [
+                "a337aeb3c122c240"
+            ]
+        ]
+    },
+    {
+        "id": "a337aeb3c122c240",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1110,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ff65992ff05c37dc",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Format Chart Data",
+        "func": "var weatherDataArray = Object.values(msg.payload) ;\n\nvar dataCount = weatherDataArray.length ;\n\nvar i, j ;\n\nvar placeDataArray = {} ;\n\n\nfor(j = 0; j < dataCount; j++) {\n    for(i = 0; i < weatherDataArray[j].rainfall.data.length; i++) {\n        if(!placeDataArray.hasOwnProperty(weatherDataArray[j].rainfall.data[i].place)) {\n            placeDataArray[weatherDataArray[j].rainfall.data[i].place] = [] ;\n        }\n        placeDataArray[weatherDataArray[j].rainfall.data[i].place].push({\"x\": new Date(weatherDataArray[j].rainfall.startTime), \"y\": weatherDataArray[j].rainfall.data[i].max});\n    }\n}\n\nvar chartData = [{\"series\": Object.keys(placeDataArray), \"data\": Object.values(placeDataArray), \"labels\": \"\"}];\n\nmsg.payload = chartData ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 380,
+        "wires": [
+            [
+                "b54cb16b77028af4"
+            ]
+        ]
+    },
+    {
+        "id": "47dbccd8cabc7626",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Format Chart Data",
+        "func": "var weatherDataArray = Object.values(msg.payload) ;\n\nvar dataCount = weatherDataArray.length ;\n\nvar i, j ;\n\nvar placeDataArray = {} ;\n\n\nfor(j = 0; j < dataCount; j++) {\n    for(i = 0; i < weatherDataArray[j].humidity.data.length; i++) {\n        if (!placeDataArray.hasOwnProperty(weatherDataArray[j].humidity.data[i].place)) {\n            placeDataArray[weatherDataArray[j].humidity.data[i].place] = [] ;\n        }\n        placeDataArray[weatherDataArray[j].humidity.data[i].place].push({ \"x\": new Date(weatherDataArray[j].humidity.recordTime), \"y\": weatherDataArray[j].humidity.data[i].value});\n    }\n}\n\nvar chartData = [{\"series\": Object.keys(placeDataArray), \"data\": Object.values(placeDataArray), \"labels\": \"\"}];\n\nmsg.payload = chartData ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 500,
+        "wires": [
+            [
+                "4270f0f65edd5b83"
+            ]
+        ]
+    },
+    {
+        "id": "4270f0f65edd5b83",
+        "type": "ui_chart",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "group": "4921adae.55bbbc",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "24",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 500,
+        "wires": [
+            [
+                "7a3c4b3d6c978b0d"
+            ]
+        ]
+    },
+    {
+        "id": "7a3c4b3d6c978b0d",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1130,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "2c5aa3d902572690",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Format Chart Data",
+        "func": "var weatherDataArray = Object.values(msg.payload);\nvar dataArray = [];\n//dataArray.push({ \"x\": new Date(weatherDataArray.updateTime), \"y\": weatherDataArray.uvindex});\n//var chartData = [{ \"series\": [\"arrivals\"], \"data\": [dataArray], \"labels\": \"\"}];\n\nvar dataCount = weatherDataArray.length;\nvar i, j;\nvar placeDataArray = {};\n\nfor (j = 0; j < dataCount; j++) {\n    if (weatherDataArray[j].uvindex == \"\") continue;\n    for (i = 0; i < weatherDataArray[j].uvindex.data.length; i++) {\n        if (!placeDataArray.hasOwnProperty(weatherDataArray[j].uvindex.data[i].place)) {\n            placeDataArray[weatherDataArray[j].uvindex.data[i].place] = [];\n        }\n        placeDataArray[weatherDataArray[j].uvindex.data[i].place].push({ \"x\": new Date(weatherDataArray[j].updateTime), \"y\": weatherDataArray[j].uvindex.data[i].value });\n    }\n}\n\nvar chartData = [{ \"series\": Object.keys(placeDataArray), \"data\": Object.values(placeDataArray), \"labels\": \"\" }];\nmsg.payload = chartData ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 560,
+        "wires": [
+            [
+                "0c63f65ac45c1420"
+            ]
+        ]
+    },
+    {
+        "id": "0c63f65ac45c1420",
+        "type": "ui_chart",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "group": "4921adae.55bbbc",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Uvindex Chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "24",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 940,
+        "y": 560,
+        "wires": [
+            [
+                "0e07d43894dfd18f"
+            ]
+        ]
+    },
+    {
+        "id": "0e07d43894dfd18f",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload + \"aaaa\"",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "9686c0dd690d1e46",
+        "type": "ui_chart",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "group": "73bd786f455878dd",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Relative Humidity Forecast",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "Y-M-D",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "9",
+        "removeOlderPoints": "9",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1120,
+        "y": 1020,
+        "wires": [
+            [
+                "ad4a6255e0d4ceb4"
+            ]
+        ]
+    },
+    {
+        "id": "ad4a6255e0d4ceb4",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload + test",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1370,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "a3a3e36d6b3e3eae",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Format Chart Data",
+        "func": "var weatherDataArray = Object.values(msg.payload) ;\nvar dataCount = weatherDataArray.length ;\nvar i, j ;\nvar placeDataArray = {};\nplaceDataArray[\"forecastMaxrh\"] = [];\nplaceDataArray[\"forecastMinrh\"] = [];\n\nfor (j = 0; j < dataCount; j++) {\n    for (i = 0; i < weatherDataArray[j].weatherForecast.length; i++) {\n        placeDataArray[\"forecastMaxrh\"].push(\n            { \n                \"x\": weatherDataArray[j].weatherForecast[i].forecastDate, \n                \"y\": weatherDataArray[j].weatherForecast[i].forecastMaxrh.value\n            }\n        );\n        placeDataArray[\"forecastMinrh\"].push(\n            {\n                \"x\": weatherDataArray[j].weatherForecast[i].forecastDate,\n                \"y\": weatherDataArray[j].weatherForecast[i].forecastMinrh.value\n            }\n        );\n    }\n}\n\nvar chartData = [{\"series\": Object.keys(placeDataArray), \"data\": Object.values(placeDataArray), \"labels\": \"\"}];\nmsg.payload = chartData ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1020,
+        "wires": [
+            [
+                "9686c0dd690d1e46"
+            ]
+        ]
+    },
+    {
+        "id": "7881765215e4a82b",
+        "type": "mongodb3 in",
+        "z": "d7b987f2a63856bc",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "",
+        "collection": "PM2.5",
+        "operation": "insert",
+        "x": 530,
+        "y": 1340,
+        "wires": [
+            [
+                "3b8a7b19b6c7b9eb"
+            ]
+        ]
+    },
+    {
+        "id": "341ed6d69ea48bd6",
+        "type": "inject",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 220,
+        "y": 1120,
+        "wires": [
+            [
+                "7d15bc55471dde8e"
+            ]
+        ]
+    },
+    {
+        "id": "7d15bc55471dde8e",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Retrieve Last Record Query",
+        "func": "msg.payload = [\n    {\n        \"$query\": {}\n    },\n    {\n        \"sort\": {\n            \"_id\": -1\n        }\n    }\n]\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 361,
+        "y": 1192,
+        "wires": [
+            [
+                "a53245f743966339"
+            ]
+        ]
+    },
+    {
+        "id": "ecf9a44e84b8b038",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Get Last updateTime",
+        "func": "if(msg.payload.hasOwnProperty('updateTime')) {\n    flow.set('lastUpdateTime', msg.payload.updateTime);\n} else {\n    flow.set('lastUpdateTime', \"\");\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 659,
+        "y": 1192,
+        "wires": [
+            [
+                "90d6867ec2ad8b58"
+            ]
+        ]
+    },
+    {
+        "id": "90d6867ec2ad8b58",
+        "type": "http request",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "https://api.data.gov.hk/v1/smart-lamppost/data/epd?pi=DF3651&di=01",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 312,
+        "y": 1248,
+        "wires": [
+            [
+                "dddd0a8d0a1a5c4e"
+            ]
+        ]
+    },
+    {
+        "id": "dddd0a8d0a1a5c4e",
+        "type": "json",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 461,
+        "y": 1248,
+        "wires": [
+            [
+                "a54f2314461681be"
+            ]
+        ]
+    },
+    {
+        "id": "a54f2314461681be",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "New Record Available",
+        "func": "var lastUpdateTime = flow.get('lastUpdateTime');\n//msg.payload.BODY.EPD.TS\nvar updateTimeTemp = msg.payload.BODY.EPD.TS;\nvar updateTime = updateTimeTemp ;\n\nif(updateTime > lastUpdateTime) {\n    msg.needUpdate = true ;\n    msg.payload.updateTime = updateTime ;\n} else {\n    msg.needUpdate = false ;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 656,
+        "y": 1248,
+        "wires": [
+            [
+                "83bce6a12cc7fe27"
+            ]
+        ]
+    },
+    {
+        "id": "83bce6a12cc7fe27",
+        "type": "switch",
+        "z": "d7b987f2a63856bc",
+        "name": "Need Update",
+        "property": "needUpdate",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "false",
+                "vt": "jsonata"
+            },
+            {
+                "t": "eq",
+                "v": "true",
+                "vt": "jsonata"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 320,
+        "y": 1300,
+        "wires": [
+            [
+                "e1d62140845a4e84"
+            ],
+            [
+                "7881765215e4a82b"
+            ]
+        ]
+    },
+    {
+        "id": "e1d62140845a4e84",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "No Update",
+        "func": "msg.payload = \"No Update\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 512,
+        "y": 1298,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3b8a7b19b6c7b9eb",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "24af5b7e3018047d",
+        "type": "mongodb3 in",
+        "z": "d7b987f2a63856bc",
+        "service": "_ext_",
+        "configNode": "126a25d637e520b3",
+        "name": "",
+        "collection": "PM2.5",
+        "operation": "find.toArray",
+        "x": 636,
+        "y": 1486,
+        "wires": [
+            [
+                "57e38f9316f83205",
+                "d0c7de2693188ec1"
+            ]
+        ]
+    },
+    {
+        "id": "2f877c01463f81a4",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Construct Date Range",
+        "func": "var date = new Date();\nvar day = date.getDate();\nvar month = date.getMonth();\nvar year = date.getFullYear();\nvar hour = date.getHours();\nvar minutes = date.getMinutes();\nvar seconds = date.getSeconds();\nvar st, et;\nvar minMilliSeconds = 60 * 1000;\nvar hourMilliSeconds = 60 * minMilliSeconds;\nvar dayMilliSeconds = 24 * hourMilliSeconds;\nvar duration = 1 * dayMilliSeconds;\n\net = date;\net.setHours(et.getHours() + 8);\net.setSeconds(seconds / 10 * 10);\nst = new Date();\nst.setTime(et.getTime() - duration);\n\nmsg.startTime = st ;\nmsg.endTime = et ;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 200,
+        "y": 1540,
+        "wires": [
+            [
+                "a5bb11aef5df6267",
+                "c9f81382be9a9921"
+            ]
+        ]
+    },
+    {
+        "id": "b3fa630660b33490",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Construct Queries",
+        "func": "Date.prototype.format = function (format) {\n    //eg:format=\"yyyy-MM-dd hh:mm:ss\";\n\n    if (!format) {\n        format = \"yyyy-MM-dd hh:mm:ss\";\n    }\n\n    var o = {\n        \"M+\": this.getMonth() + 1,  // month\n        \"d+\": this.getDate(),       // day\n        \"H+\": this.getHours(),      // hour\n        \"h+\": this.getHours(),      // hour\n        \"m+\": this.getMinutes(),    // minute\n        \"s+\": this.getSeconds(),    // second\n        \"q+\": Math.floor((this.getMonth() + 3) / 3), // quarter\n        \"S\": this.getMilliseconds()\n    };\n\n    if (/(y+)/.test(format)) {\n        format = format.replace(RegExp.$1, (this.getFullYear() + \"\")\n            .substr(4 - RegExp.$1.length));\n    }\n\n    for (var k in o) {\n        if (new RegExp(\"(\" + k + \")\").test(format)) {\n            format = format.replace(RegExp.$1, RegExp.$1.length == 1\n                ? o[k]\n                : (\"00\" + o[k]).substr((\"\" + o[k]).length));\n        }\n    }\n\n    return format;\n};\n\n\nlet fillZero = (n) => {\n    let result = (n).toString().length === 1 ? ('0' + n) : n;\n    return result;\n}\nlet formatTime = (t = new Date()) => {\n    let d = new Date(t);\n    let year = d.getFullYear();\n    let month = d.getMonth() + 1;\n    let date = d.getDate();\n    let hours = d.getHours();\n    let minutes = d.getMinutes();\n    let seconds = d.getSeconds();\n    let result = `${year}${fillZero(month)}${fillZero(date)}${fillZero(hours)}${fillZero(minutes)}${fillZero(seconds)}`;\n    return result;\n}\nlet res = formatTime(new Date());\n\nvar st = msg.startTime;\nvar et = msg.endTime;\n\nvar stts = st.getTime();\nvar etts = et.getTime();\n\nvar ststr = st.format(\"YYYYMMDDhhmmss\");\nvar etstr = et.format(\"YYYYMMDDhhmmss\");\n\nststr = formatTime(st);\netstr = formatTime(new Date());\n\nvar query = { 'updateTime': { $gt: ststr, $lt: etstr} };\n/*var d = new Date();\nd.setMonth(d.getMonth() - 1);\nvar query = {\n    dataTime: { $gt: d.toISOString()}\n};\n\n2022-11-18T16:00:00.000Z\n20221119013000\n\n\n\nvar st = msg.startTime;\nvar et = msg.endTime;\n\nvar stts = st.getTime();\nvar etts = et.getTime();\n\nvar ststr=st.toISOString();\nvar etstr=et.toISOString();\n\nvar query = { 'updateTime': { $gt: ststr, $lt: etstr} };\n*/\n\n\n\n\nmsg.payload = query;\nmsg.ststr = ststr ;\nmsg.etstr = etstr ;\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 461,
+        "y": 1431,
+        "wires": [
+            [
+                "24af5b7e3018047d",
+                "78fd28787d8b6cc0"
+            ]
+        ]
+    },
+    {
+        "id": "1a3c1fdf36ea5505",
+        "type": "ui_chart",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "group": "ea6a3a625326cede",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "PM2.5 Report",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "24",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 980,
+        "y": 1540,
+        "wires": [
+            [
+                "07761ff964f1e6df"
+            ]
+        ]
+    },
+    {
+        "id": "5be828f8c61c1667",
+        "type": "inject",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 201,
+        "y": 1427,
+        "wires": [
+            [
+                "2f877c01463f81a4"
+            ]
+        ]
+    },
+    {
+        "id": "07761ff964f1e6df",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload + !!!!!",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 1540,
+        "wires": []
+    },
+    {
+        "id": "a53245f743966339",
+        "type": "mongodb3 in",
+        "z": "d7b987f2a63856bc",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "",
+        "collection": "PM2.5",
+        "operation": "findOne",
+        "x": 520,
+        "y": 1120,
+        "wires": [
+            [
+                "ecf9a44e84b8b038"
+            ]
+        ]
+    },
+    {
+        "id": "57e38f9316f83205",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Format Chart Data",
+        "func": "var weatherDataArray = Object.values(msg.payload) ;\nvar dataCount = weatherDataArray.length ;\nvar i, j;\nvar placeDataArray = [];\n//placeDataArray[\"A\"] = [];\nmsg.num = dataCount;\n\nfor (j = 0; j < dataCount; j++) {\n    var reg = /(\\d{4})(\\d{2})(\\d{2})(\\d{2})(\\d{2})(\\d{2})/;\n    let dt1 = weatherDataArray[j].BODY.EPD.TS.replace(reg, '$1-$2-$3 $4:$5:$6');\n    let timeStamp = new Date(dt1);\n    timeStamp.setHours(timeStamp.getHours() - 8);\n    placeDataArray.push(\n        {\n            \"x\": timeStamp,\n            \"y\": weatherDataArray[j].BODY.EPD.PM25\n        }\n    );\n}\n\nvar chartData = [{ \"series\": [],\"data\": [placeDataArray], \"labels\": \"\"}];\nmsg.payload = chartData ;\n\nreturn msg;\n\n/*\nvar weatherDataArray = Object.values(msg.payload) ;\nvar dataCount = weatherDataArray.length ;\nvar i, j ;\nvar placeDataArray = {};\nplaceDataArray[\"forecastMaxtemp\"] = [];\nplaceDataArray[\"forecastMintemp\"] = [];\n\nfor (j = 0; j < dataCount; j++) {\n    for (i = 0; i < weatherDataArray[j].weatherForecast.length; i++) {\n        placeDataArray[\"forecastMaxtemp\"].push(\n            { \n                \"x\": weatherDataArray[j].weatherForecast[i].forecastDate, \n                \"y\": weatherDataArray[j].weatherForecast[i].forecastMaxtemp.value\n            }\n        );\n        placeDataArray[\"forecastMintemp\"].push(\n            {\n                \"x\": weatherDataArray[j].weatherForecast[i].forecastDate,\n                \"y\": weatherDataArray[j].weatherForecast[i].forecastMintemp.value\n            }\n        );\n    }\n}\n\nvar chartData = [{\"series\": Object.keys(placeDataArray), \"data\": Object.values(placeDataArray), \"labels\": \"\"}];\nmsg.payload = chartData ;\n\n*/",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1540,
+        "wires": [
+            [
+                "1a3c1fdf36ea5505",
+                "964440e8a28c5b17"
+            ]
+        ]
+    },
+    {
+        "id": "d0c7de2693188ec1",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload + !!!!!",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 980,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "78fd28787d8b6cc0",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "payload + !!!!!",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "964440e8a28c5b17",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "num",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "c9f81382be9a9921",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "Construct Queries",
+        "func": "Date.prototype.format = function (fmt) {\n    var o = {\n        \"M+\": this.getMonth() + 1,                 //月份 \n        \"d+\": this.getDate(),                    //日 \n        \"h+\": this.getHours(),                   //小时 \n        \"m+\": this.getMinutes(),                 //分 \n        \"s+\": this.getSeconds(),                 //秒 \n        \"q+\": Math.floor((this.getMonth() + 3) / 3), //季度 \n        \"S\": this.getMilliseconds()             //毫秒 \n    };\n    if (/(y+)/.test(fmt)) {\n        fmt = fmt.replace(RegExp.$1, (this.getFullYear() + \"\").substr(4 - RegExp.$1.length));\n    }\n    for (var k in o) {\n        if (new RegExp(\"(\" + k + \")\").test(fmt)) {\n            fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : ((\"00\" + o[k]).substr((\"\" + o[k]).length)));\n        }\n    }\n    return fmt;\n}\n\nmsg.startTime = msg.startTime.format(\"yyyyMMddhhmmss\");\nmsg.endTime = msg.endTime.format(\"yyyyMMddhhmmss\");\nvar st = msg.startTime;\nvar et = msg.endTime;\n\nvar query = { 'updateTime': { $gt: msg.startTime, $lt: msg.endTime} };\n/*var d = new Date();\nd.setMonth(d.getMonth() - 1);\nvar query = {\n    dataTime: { $gt: d.toISOString()}\n};\n\n2022-11-18T16:00:00.000Z\n20221119013000\n\n\n\nvar st = msg.startTime;\nvar et = msg.endTime;\n\nvar stts = st.getTime();\nvar etts = et.getTime();\n\nvar ststr=st.toISOString();\nvar etstr=et.toISOString();\n\nvar query = { 'updateTime': { $gt: ststr, $lt: etstr} };\n*/\n\n\nmsg.payload = query;\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 1620,
+        "wires": [
+            [
+                "24af5b7e3018047d",
+                "45299c8bbb9ba83e",
+                "99d2c373e328edba"
+            ]
+        ]
+    },
+    {
+        "id": "45299c8bbb9ba83e",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "startTime",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "a5bb11aef5df6267",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "startTime",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 420,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "99d2c373e328edba",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "endTime",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1740,
+        "wires": []
+    },
+    {
+        "id": "540943e639057661",
+        "type": "inject",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 1940,
+        "wires": [
+            [
+                "90397ec933f73249"
+            ]
+        ]
+    },
+    {
+        "id": "7f8bcd4c3317396a",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "temperature",
+        "func": "const temp=msg.payload.temperature.data[1].value;\n\nmsg.payload=temp;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 1820,
+        "wires": [
+            [
+                "d8aeebf6fa6f1b86"
+            ]
+        ]
+    },
+    {
+        "id": "90397ec933f73249",
+        "type": "http request",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=en",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 300,
+        "y": 1880,
+        "wires": [
+            [
+                "79bb90524f051449",
+                "435f2e678658d643",
+                "7f8bcd4c3317396a",
+                "747429105915fae5"
+            ]
+        ]
+    },
+    {
+        "id": "d8aeebf6fa6f1b86",
+        "type": "ui_gauge",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "group": "e71fe7bc6b278e34",
+        "order": 3,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Current Temperature ",
+        "label": "℃",
+        "format": "{{value}} ℃",
+        "min": 0,
+        "max": "45",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 780,
+        "y": 1820,
+        "wires": [],
+        "icon": "font-awesome/fa-thermometer-1"
+    },
+    {
+        "id": "93db292095c9d515",
+        "type": "ui_gauge",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "group": "e71fe7bc6b278e34",
+        "order": 5,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Current Humidty",
+        "label": "%",
+        "format": "{{value}} %",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 760,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "435f2e678658d643",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "humidity",
+        "func": "humid=msg.payload.humidity.data[0].value;\n\nmsg.payload=humid;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 1880,
+        "wires": [
+            [
+                "93db292095c9d515"
+            ]
+        ]
+    },
+    {
+        "id": "07b1550833584e4d",
+        "type": "mongodb3 in",
+        "z": "d7b987f2a63856bc",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "information stored",
+        "collection": "information",
+        "operation": "insertOne",
+        "x": 710,
+        "y": 2000,
+        "wires": [
+            [
+                "66b8e31054e1fc0b"
+            ]
+        ]
+    },
+    {
+        "id": "79bb90524f051449",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "database",
+        "func": "const time=msg.payload.updateTime\n\nconst temp=msg.payload.temperature.data[0].value;\nconst humid=msg.payload.humidity.data[0].value;\n\n\nmsg.payload={\n    time: time,\n    temperature:temp,\n    humid: humid,\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 2000,
+        "wires": [
+            [
+                "07b1550833584e4d"
+            ]
+        ]
+    },
+    {
+        "id": "66b8e31054e1fc0b",
+        "type": "debug",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 2000,
+        "wires": []
+    },
+    {
+        "id": "a082d286a6e5cb4e",
+        "type": "ui_text",
+        "z": "d7b987f2a63856bc",
+        "group": "e71fe7bc6b278e34",
+        "order": 17,
+        "width": "0",
+        "height": "0",
+        "name": "updateTime",
+        "label": "UpdateTime:           ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 730,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "747429105915fae5",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "function 3",
+        "func": "\nvar time = msg.payload.updateTime;\nvar update = time.substring(0, 10) + \" \" + time.substring(11, 19);\nmsg.payload = update;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 1940,
+        "wires": [
+            [
+                "a082d286a6e5cb4e"
+            ]
+        ]
+    },
+    {
+        "id": "a49a3661c319859c",
+        "type": "inject",
+        "z": "d7b987f2a63856bc",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 2200,
+        "wires": [
+            [
+                "0ce2519b83c0e4ca"
+            ]
+        ]
+    },
+    {
+        "id": "0ce2519b83c0e4ca",
+        "type": "http request",
+        "z": "d7b987f2a63856bc",
+        "name": "http request",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=fnd&lang=en",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 2200,
+        "wires": [
+            [
+                "48e935611cce07fe"
+            ]
+        ]
+    },
+    {
+        "id": "48e935611cce07fe",
+        "type": "function",
+        "z": "d7b987f2a63856bc",
+        "name": "situation",
+        "func": "var situation = msg.payload.generalSituation;\n\nmsg.payload = situation;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 2200,
+        "wires": [
+            [
+                "aa9a4ea31b6545d5"
+            ]
+        ]
+    },
+    {
+        "id": "aa9a4ea31b6545d5",
+        "type": "ui_text",
+        "z": "d7b987f2a63856bc",
+        "group": "e71fe7bc6b278e34",
+        "order": 17,
+        "width": "0",
+        "height": "0",
+        "name": "General Situation",
+        "label": "General Situation:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 790,
+        "y": 2200,
+        "wires": []
+    },
+    {
+        "id": "82ba2c938d600b8e",
+        "type": "inject",
+        "z": "7ddb799eea90606a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "Timer",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 360,
+        "wires": [
+            [
+                "7e7c3a153dd00143"
+            ]
+        ]
+    },
+    {
+        "id": "6eb3535076288491",
+        "type": "function",
+        "z": "7ddb799eea90606a",
+        "name": "temperature",
+        "func": "const temp=msg.payload.temperature.data[1].value;\n\nmsg.payload=temp;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 530,
+        "y": 240,
+        "wires": [
+            [
+                "72502af283f0ad8b"
+            ]
+        ]
+    },
+    {
+        "id": "7e7c3a153dd00143",
+        "type": "http request",
+        "z": "7ddb799eea90606a",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=rhrread&lang=en",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 300,
+        "y": 300,
+        "wires": [
+            [
+                "772e689c241afbf6",
+                "e7bf60d0488a0c36",
+                "6eb3535076288491",
+                "94e796655295be6c"
+            ]
+        ]
+    },
+    {
+        "id": "72502af283f0ad8b",
+        "type": "ui_gauge",
+        "z": "7ddb799eea90606a",
+        "name": "",
+        "group": "e71fe7bc6b278e34",
+        "order": 3,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Current Temperature ",
+        "label": "℃",
+        "format": "{{value}} ℃",
+        "min": 0,
+        "max": "45",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 780,
+        "y": 240,
+        "wires": [],
+        "icon": "font-awesome/fa-thermometer-1"
+    },
+    {
+        "id": "6433bece147c9fd7",
+        "type": "ui_gauge",
+        "z": "7ddb799eea90606a",
+        "name": "",
+        "group": "e71fe7bc6b278e34",
+        "order": 5,
+        "width": 6,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Current Humidty",
+        "label": "%",
+        "format": "{{value}} %",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 760,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e7bf60d0488a0c36",
+        "type": "function",
+        "z": "7ddb799eea90606a",
+        "name": "humidity",
+        "func": "humid=msg.payload.humidity.data[0].value;\n\nmsg.payload=humid;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "x": 520,
+        "y": 300,
+        "wires": [
+            [
+                "6433bece147c9fd7"
+            ]
+        ]
+    },
+    {
+        "id": "c5fd280496cddc6f",
+        "type": "mongodb3 in",
+        "z": "7ddb799eea90606a",
+        "service": "_ext_",
+        "configNode": "ecc26120.5c01a8",
+        "name": "information stored",
+        "collection": "information",
+        "operation": "insertOne",
+        "x": 710,
+        "y": 420,
+        "wires": [
+            [
+                "250c15f2da1a5767"
+            ]
+        ]
+    },
+    {
+        "id": "772e689c241afbf6",
+        "type": "function",
+        "z": "7ddb799eea90606a",
+        "name": "database",
+        "func": "const time=msg.payload.updateTime\n\nconst temp=msg.payload.temperature.data[0].value;\nconst humid=msg.payload.humidity.data[0].value;\n\n\nmsg.payload={\n    time: time,\n    temperature:temp,\n    humid: humid,\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 420,
+        "wires": [
+            [
+                "c5fd280496cddc6f"
+            ]
+        ]
+    },
+    {
+        "id": "250c15f2da1a5767",
+        "type": "debug",
+        "z": "7ddb799eea90606a",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "9ea89ce448adae86",
+        "type": "ui_text",
+        "z": "7ddb799eea90606a",
+        "group": "e71fe7bc6b278e34",
+        "order": 17,
+        "width": 29,
+        "height": 1,
+        "name": "updateTime",
+        "label": "UpdateTime:           ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "x": 730,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "94e796655295be6c",
+        "type": "function",
+        "z": "7ddb799eea90606a",
+        "name": "function 1",
+        "func": "\nvar time = msg.payload.updateTime;\nvar update = time.substring(0, 10) + \" \" + time.substring(11, 19);\nmsg.payload = update;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 520,
+        "y": 360,
+        "wires": [
+            [
+                "9ea89ce448adae86"
+            ]
+        ]
+    },
+    {
+        "id": "2077e2ef9738eb0f",
+        "type": "inject",
+        "z": "7ddb799eea90606a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 620,
+        "wires": [
+            [
+                "5bcae7b3369c9313"
+            ]
+        ]
+    },
+    {
+        "id": "5bcae7b3369c9313",
+        "type": "http request",
+        "z": "7ddb799eea90606a",
+        "name": "http request",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=fnd&lang=en",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 370,
+        "y": 620,
+        "wires": [
+            [
+                "2c5a5f29fd5c55c2"
+            ]
+        ]
+    },
+    {
+        "id": "2c5a5f29fd5c55c2",
+        "type": "function",
+        "z": "7ddb799eea90606a",
+        "name": "situation",
+        "func": "var situation = msg.payload.generalSituation;\n\nmsg.payload = situation;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 620,
+        "wires": [
+            [
+                "2744f4893bb7660e"
+            ]
+        ]
+    },
+    {
+        "id": "2744f4893bb7660e",
+        "type": "ui_text",
+        "z": "7ddb799eea90606a",
+        "group": "e71fe7bc6b278e34",
+        "order": 17,
+        "width": 29,
+        "height": 1,
+        "name": "General Situation",
+        "label": "General Situation:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 790,
+        "y": 620,
+        "wires": []
+    }
+]
